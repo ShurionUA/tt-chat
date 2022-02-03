@@ -15,9 +15,9 @@ import javax.servlet.http.HttpSession;
 public class LoginController extends HttpServlet {
     private static final String SESSION_ATTRIBUTE_ID = "userDto";
     private static final Injector injector = Injector.getInstance("chat");
-    private AuthenticationService authService = (AuthenticationService) injector
+    private final AuthenticationService authService = (AuthenticationService) injector
             .getInstance(AuthenticationService.class);
-    private UserDtoMapper userDtoMapper = (UserDtoMapper) injector
+    private final UserDtoMapper userDtoMapper = (UserDtoMapper) injector
             .getInstance(UserDtoMapper.class);
 
     @Override

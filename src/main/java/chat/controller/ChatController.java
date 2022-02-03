@@ -19,7 +19,7 @@ public class ChatController extends HttpServlet {
     private static final Injector injector = Injector.getInstance("chat");
     private final MessageService messageService = (MessageService) injector
             .getInstance(MessageService.class);
-    private UserDtoMapper userDtoMapper = (UserDtoMapper) injector
+    private final UserDtoMapper userDtoMapper = (UserDtoMapper) injector
             .getInstance(UserDtoMapper.class);
 
     @Override

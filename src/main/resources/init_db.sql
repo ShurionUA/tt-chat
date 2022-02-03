@@ -10,8 +10,7 @@ CREATE TABLE IF NOT EXISTS `users` (
                 `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
                 PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
-
-    -- ----------------------------
+-- ----------------------------
 -- Table structure for messages
 -- ----------------------------
 CREATE TABLE IF NOT EXISTS `messages` (
